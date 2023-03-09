@@ -1,0 +1,24 @@
+{
+  "name": "@jambonz/custom-speech-example",
+  "version": "0.0.1",
+  "description": "Example of using jambonz custom speech api for TTS and STT",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jslint": "eslint app.js lib",
+    "start": "node app.js"
+  },
+  "author": "Dave Horton",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/speech": "^5.4.0",
+    "@google-cloud/text-to-speech": "^4.2.1",
+    "express": "^4.18.2",
+    "pino": "^8.11.0",
+    "ws": "^8.12.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
+}
