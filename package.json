@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jslint": "eslint app.js lib",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "./build_stubs.sh"
   },
   "author": "Dave Horton",
   "license": "MIT",
