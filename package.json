@@ -6,17 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jslint": "eslint app.js lib",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "./build_stubs.sh"
   },
   "author": "Dave Horton",
   "license": "MIT",
   "dependencies": {
     "@google-cloud/speech": "^5.4.0",
     "@google-cloud/text-to-speech": "^4.2.1",
+    "bent": "^7.3.12",
     "express": "^4.18.2",
+    "google-protobuf": "^3.21.2",
+    "grpc-tools": "^1.12.4",
     "pino": "^8.11.0",
-    "ws": "^8.12.1",
-    "bent": "^7.3.12"
+    "ws": "^8.12.1"
   },
   "devDependencies": {
     "eslint": "^8.20.0",
