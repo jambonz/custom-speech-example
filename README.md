@@ -4,6 +4,7 @@ This is an example http/webserver application showing how to add support for a c
 
 **TTS**: 
 - [google](https://cloud.google.com/text-to-speech/docs),
+- [elevenlabs] (https://beta.elevenlabs.io/)
 
 **STT**:
 - [google](https://cloud.google.com/speech-to-text)
@@ -16,6 +17,7 @@ This is an example http/webserver application showing how to add support for a c
 You can configure the application to connect to all of the providers or just some depending on the environment variables supplied.
 
 - To use google, supply GCP_JSON_KEY_FILE pointing to your google json key
+- To use elevenlabs, supply ELEVEN_API_KEY which has your api key
 - To use assemblyAI, supply ASSEMBLY_AI_API_TOKEN which has your assemblyAI api key
 - To use gladia, supply GLADIA_API_KEY
 - To use Vosk, supply VOSK_URL which has the ip:port of the Vosk server grpc endpoint
@@ -28,6 +30,7 @@ GCP_JSON_KEY_FILE=<google-json-key-path> \
 ASSEMBLY_AI_API_TOKEN=<assemblyai-api-key> \
 VOSK_URL=xxxx:yyyy
 GLADIA_API_KEY=xxxxxxxx \
+ELEVEN_API_KEY=xxxxxxx \
 HTTP_PORT=3000 node app.js
 ```
 
