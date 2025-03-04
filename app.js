@@ -13,7 +13,9 @@ const isValidApiKey = (hdr, apiKey) => {
 };
 
 const verifyApiKey = (req, res, next) => {
-  if (!isValidApiKey(req.headers['authorization'], process.env.API_KEY)) return res.status(403);
+  if (!isValidApiKey(req.headers['authorization'], process.env.API_KEY)) {
+    return res.status(403).json({ message: 'Forbidden' });
+  }
   next();
 };
 
